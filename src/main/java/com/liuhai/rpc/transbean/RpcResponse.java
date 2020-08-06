@@ -11,7 +11,7 @@ public class RpcResponse <T> {
 
     private String responseId;
 
-    private T gnvokeResult;
+    private T invokeResult;
 
     public String getResponseId() {
         return responseId;
@@ -21,11 +21,11 @@ public class RpcResponse <T> {
         this.responseId = responseId;
     }
 
-    public T getGnvokeResult() {
-        return gnvokeResult;
+    public T getInvokeResult() {
+        return invokeResult;
     }
 
-    public void setGnvokeResult(T gnvokeResult) {
-        this.gnvokeResult = gnvokeResult;
+    public void setInvokeResult(T invokeResult) {
+        this.invokeResult = invokeResult;
     }
 }

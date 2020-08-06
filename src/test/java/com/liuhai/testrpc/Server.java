@@ -8,7 +8,6 @@ import com.liuhai.rpc.transbean.RpcResponse;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
-import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
@@ -42,7 +41,7 @@ public class Server {
 
                                         RpcResponse<String> response = new RpcResponse<String>();
                                         response.setResponseId("008");
-                                        response.setGnvokeResult("hello xiao wan!");
+                                        response.setInvokeResult("hello xiao wan!");
                                         ctx.writeAndFlush(response);
                                     }
                                 });

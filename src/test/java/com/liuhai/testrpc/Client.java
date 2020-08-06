@@ -8,7 +8,6 @@ import com.liuhai.rpc.transbean.RpcResponse;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
-import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
 /**
@@ -48,7 +47,7 @@ public class Client {
                                     @Override
                                     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
                                         RpcResponse<String> response = (RpcResponse<String>) msg;
-                                        System.out.println(response.getGnvokeResult());
+                                        System.out.println(response.getInvokeResult());
 //                                        ctx.close().addListener(ChannelFutureListener.CLOSE);
                                     }
                                 });
